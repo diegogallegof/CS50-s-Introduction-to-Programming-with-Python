@@ -114,7 +114,86 @@ if x < y or x > y:
     print("x is not equal to y")
 else:
     print("x is equal to y")
-    
+
+-----
+if x != y:
+    print("x is not equal to y")
+else:
+    print("x is equal to y")
+
+------
+score = int(input("Score: "))
+
+if score >= 90 and score <= 100
+    print("Grade: A")
+
+The same 
+if 90 <= score and sore <= 100
+    print("Grade: A")
+
+if 90 <= score <= 100
+    print("Grade: A")
+
+if socore >= 90:
+    print("Grade: A")
+elif socore >= 80:
+    print("Grade: B")
+elif socore >= 70:
+    print("Grade: C")
+elif socore >= 60:
+    print("Grade: D")
+else:
+    print("Grade: F")
+
+-----
+parity.py
+
+x = int(input("what's x? "))
+
+if x % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+----
+def main():
+    x = int(input("what's x? "))
+    if is_even(x):
+        print("Even")
+    else:
+        print("Odd")
+
+def is_even(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+main()
+
+### Pythonic - the way you do things in python 
+
+def is_even(n)
+    return True if n % 2 == 0 else False
+
+def is_even(n)
+    return n % 2 == 0
+
+-----
+
+house.py
+
+name = input("what's is your name? ")
+
+match name:
+    case "Harry" | "Hermione" | "Ron":
+        print("Gryffindor")
+    case "Draco":
+        print("Slytherin")
+    case _:
+        print("Who?")
+
+
 
 
 
