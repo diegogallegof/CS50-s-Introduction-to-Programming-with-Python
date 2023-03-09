@@ -96,7 +96,25 @@ main()
 * cd - change directories from one folder to another
 * rmdir - remove a directory
 * clear - clear your terminal window 
+----
 
+x = int(input("What's X?"))
+y = int(input("what's is Y?"))
+
+if x < y:
+    print("x is less than y")
+elif x > y:
+    print("x y greater than y")
+else:
+    print("x is equals to y")
+
+----
+#### Or
+if x < y or x > y:
+    print("x is not equal to y")
+else:
+    print("x is equal to y")
+    
 
 
 
