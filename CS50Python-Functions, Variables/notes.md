@@ -275,6 +275,40 @@ def meow(n):
     for _ in range(n)
         print("meow")
 
+---------
+
+hogwarts.py
+
+students = ["Hermione","Harry","Ron"]
+
+print(students[0])
+print(students[1])
+print(students[2])
+
+--------
+students = ["Hermione","Harry","Ron"]
+
+for student in students:
+    print(student)
+
+too criptic??
+for _ in students:
+    print(_)
+
+--------
+
+students = ["Hermione","Harry","Ron"]
+
+for i in range(len(students)):
+    print(i + 1, students[i])
+
+## dict
+
+Dictionary.
+
+
+
+
 
 
 
