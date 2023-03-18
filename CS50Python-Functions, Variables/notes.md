@@ -316,6 +316,49 @@ students = {
     "Ron":"Griffindore",
     "Draco":"Slytherin"
 }
+print(student["Hermione"])
+print(student["Harry"])
+print(student["Ron"])
+print(student["Draco"])
+
+for student in students:
+    print(student, students[student],sep = ", ")
+
+------
+
+students = [
+    {"name":"Hermimone","house":"Griffindore","patronus":"Otter"},
+    {"name":"Harry","house":"Griffindore","patronus":"Stag"},
+    {"name":"Ron","house":"Griffindore","patronus":"Jack Russell Terrier"},
+    {"name":"Draco","house":"Slytherin","patronus":None}
+]
+for student in students:
+    print(student["name"],student["house"],student["patronus"],sep=", ")
+
+ //keyword = None
+
+_______
+
+mario.py
+
+def main():
+    print_square(3)
+
+def print_square(size):
+    # For each row in square
+    for i in range(size):
+        # For each brick in row
+        for j in range(size):
+            # Print brick
+            print("#",end="")
+        print()
+
+def print_square(size):
+    for i in range(size):
+        print("#" * size)
+
+
+
 
 
 
