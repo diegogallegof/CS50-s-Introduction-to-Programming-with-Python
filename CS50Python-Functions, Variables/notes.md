@@ -307,6 +307,17 @@ for i in range(len(students)):
 Dictionary.
 
 
+students = ["Hermione","Harry","Ron","Draco"]
+houses = ["Griffindore","Griffindore","Griffindore","Slytherin"]
+
+students = {
+    "Hermione":"Griffindore",
+    "Harry":"Griffindore",
+    "Ron":"Griffindore",
+    "Draco":"Slytherin"
+}
+
+
 
 
 
