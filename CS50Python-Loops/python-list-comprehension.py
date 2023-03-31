@@ -157,3 +157,42 @@ else:
 string_random = "hello world !"
 ans = string_random.isalnum()
 print(ans)
+
+# check the len for a string
+le = len("")
+print(le)
+
+def max_min(s):
+    return 2 <= len(s) <=6
+
+print(max_min("hc8976"))
+
+
+def is_two_char(s: str):
+    if len(s) >= 2:
+        return (s[0].isalpha() and s[1].isalpha())
+    return False
+
+print(is_two_char("A"))
+
+def my_function(parameter: str) -> int:
+    """ do something with the parameter docstring """
+    parameter = 2
+    return parameter
+print(my_function("a"))
+
+# slicing notation
+
+a = "990"
+
+l = len(a)
+
+b = not(a[:l-1:].isdigit())
+
+print(b)
+
+char = "abc0001"
+i = char.index("0")
+print(char[:in:])
+
+#comment
