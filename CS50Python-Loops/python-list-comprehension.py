@@ -191,8 +191,77 @@ b = not(a[:l-1:].isdigit())
 
 print(b)
 
-char = "abc0001"
-i = char.index("0")
-print(char[:in:])
 
+
+def is_zeroX(s: str):
+    i = s.find("0")
+    return i == -1 and s[:i].isnumeric()
+
+print(is_zeroX("CS50"))
+
+def is_zero(s: str):
+    i = s.find("0")
+    # si el indice es -1 entonces no hay ceros 
+    if i != -1:
+        # como hay cero, dime si las letras anteriore al cero son numeros
+        print("IS DIGIT: "+str(s[:i:]))
+        if(s[:i:].isdigit()):
+            print(s[:i:])
+            return True
+        else:
+            return False
+    # si no hay ceros retorne verdadero
+    else:
+        return True
+print(is_zero("CS50"))
+
+
+
+print("CS5".isdigit())
+print("CS5".isnumeric())
+
+def is_zeroZ(s: str):
+    a = ""
+    for char in s:
+        if char.isdigit():
+            a = char
+            break
+    if a == "0":
+        return False
+    return True
+
+print(is_zeroZ("CS50"))
+    
+def is_middle(s: str) -> bool:
+    l = len(s)
+    if l > 2:
+        # AA i
+        # AA Ai
+        # AA ii
+        # AA AAi
+        # AA iAi X
+        # AA Aii
+        # AA iii
+        # AA AAAi
+        # AA iAAi X
+        # AA AAii
+        # AA iiAi X
+        # AA iAii
+        # AA Aiii
+        # AA iiii
+        # AA 
+        
+        
+        
+       
+
+        if s[l-1].isalpha():
+            ans = True
+            for char in s:
+                if char.isdigit():
+                    ans = False
+                    break
+        return ans 
+print("----------------------------------------------------------------")
+print(is_middle("A8A"))
 #comment
