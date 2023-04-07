@@ -234,34 +234,81 @@ print(is_zeroZ("CS50"))
     
 def is_middle(s: str) -> bool:
     l = len(s)
+    ans = True
     if l > 2:
         # AA i
         # AA Ai
         # AA ii
         # AA AAi
-        # AA iAi X
         # AA Aii
         # AA iii
         # AA AAAi
-        # AA iAAi X
         # AA AAii
-        # AA iiAi X
-        # AA iAii
         # AA Aiii
         # AA iiii
         # AA 
+        # AA iAi - l == 5
+        # AA iAAi - l == 6
+        # AA iAii
+        # AA iiAi
+        # AA AiAi
         
-        
-        
-       
-
         if s[l-1].isalpha():
-            ans = True
             for char in s:
                 if char.isdigit():
                     ans = False
                     break
+        elif l == 5 or l == 6:
+            for i in range(2, l-1):
+                if s[i].isdecimal() and s[i+1].isalpha():
+                    ans = False
+                    break
         return ans 
 print("----------------------------------------------------------------")
-print(is_middle("A8A"))
+print(is_middle("A8a9a9"))
 #comment
+
+def f():
+    table = {
+        "apple":130,
+        "avocado":50,
+        "banana":110,
+        "cantaloupe":50,
+        "grapefruit":60,
+        "grapes":90,
+        "honeydew melon":50,
+        "kiwifruit":90,
+        "lemon":15,
+        "nectarine":60,
+        "orange":80,
+        "peach":60,
+        "pear":100,
+        "pineapple":50,
+        "plums":70,
+        "strawberries":50,
+        "sweet cherries":100,
+        "tangerine":50,
+        "watermelon":80,
+        "lime":20
+    }
+#If k is a str and d is a dict, you can check whether k is a key in d with code like:
+#if k in d:
+    food = str(input("Item: ")).lower()
+    if food in table:
+        print("Calories: ",table[food])
+
+nums = [4, 2, 6, 8, 9, 10]
+a = nums[4]-6
+b = nums[1]-2
+print(a,b)
+print(nums[a:b:-1])
+
+# Exceptions
+while True:
+    try:
+        x = int(input("What's x? "))
+    except ValueError:
+        print("x is not an Integer")
+    else:
+        break
+print(f"x is {x}")
