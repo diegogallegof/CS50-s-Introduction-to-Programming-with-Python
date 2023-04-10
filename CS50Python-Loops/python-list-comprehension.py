@@ -303,12 +303,4 @@ b = nums[1]-2
 print(a,b)
 print(nums[a:b:-1])
 
-# Exceptions
-while True:
-    try:
-        x = int(input("What's x? "))
-    except ValueError:
-        print("x is not an Integer")
-    else:
-        break
-print(f"x is {x}")
+

@@ -366,7 +366,7 @@ def print_row(width):
 
 main()
 
-
+# Exceptions
 try:
     x = int(input("What's x?"))
 except ValueError:
